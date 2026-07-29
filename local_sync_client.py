@@ -52,7 +52,7 @@ SKIP_SUFFIXES = {
 }
 SYNC_DIR_NAMES = ("agent_diy", "agent_ppo", "conf")
 GET_UPLOAD_CHUNK_SIZE = 4096
-DEFAULT_SYNC_URL = "https://tencentarena.com/p5/ide/11428/proxy/8765"
+DEFAULT_SYNC_URL = "https://tencentarena.com/p5/ide/18005/proxy/8765"
 DEFAULT_SYNC_TOKEN = "fwwb-new-codex-sync-20260512-5a7f58a98ddf4e9c9b4c9e1b6a2d8f41"
 DEFAULT_COOKIE_FILE = Path.home() / ".fwwb_ide_proxy_cookie"
 DEFAULT_PROXY_COOKIE_NAME = "kaiwu-token"
@@ -64,7 +64,7 @@ PROXY_COOKIE_NAME_ALIASES = ("kaiwu-token", "kaiwu_token")
 # USER_PROXY_COOKIE = "你的 kaiwu-token Cookie Value"
 # USER_PROXY_COOKIE = "kaiwu-token=..."
 # USER_PROXY_COOKIE = "DXUSS=...; Hm_lvt_xxx=...; kaiwu-token=...; select_lang=zh"
-USER_PROXY_COOKIE = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Nzg3MjE1OTkuMDgxMDI0LCJpYXQiOjE3NzgxMTY3OTkuMDgxMDI0LCJpc3MiOiJrYWl3dSIsImN1c3RvbSI6NDQzOTN9.pwpu3o8QEB1o8v5gQS4sF-dKzW5Ilm2lo9is_iqvp2oEU1sMLiUBeP50KD-rvRlE11TEzQ0cnPKxDsocOvUcIA"
+USER_PROXY_COOKIE = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3ODU3NjYwMzguMzgyMjE2LCJpYXQiOjE3ODUxNjEyMzguMzgyMjE2LCJpc3MiOiJrYWl3dSIsImN1c3RvbSI6NDQ0ODR9.pge7ct2b1SmJ6Du8f_1Dij3eF17Sst0H8YAqC9JYoD8ZSU37eBQlf0tMJvRcFUTk12mVIv-PAppfk4FQIg0WRw"
 
 
 class TencentProxyAuthError(RuntimeError):
@@ -185,7 +185,7 @@ class SyncClient:
                 "请检查：\n"
                 "1. 网页 IDE 终端里是否已经启动：python3 ide_sync_server.py --root .\n"
                 "2. 服务端是否显示监听 http://0.0.0.0:8765。\n"
-                "3. 浏览器是否能打开固定地址：https://tencentarena.com/p5/ide/11428/proxy/8765/health。"
+                "3. 浏览器是否能打开固定地址：https://tencentarena.com/p/common/competition/ide/516/8606/18005/proxy/8765/health。"
             ) from exc
 
 
